@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    min-height: 70px;
+    padding: 0 2vw;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    background: #8fbfba;
+    background: linear-gradient(90deg, rgba(143, 191, 186, 1) 0%, rgba(19, 135, 89, 1) 100%);
+}
+
+.logoandname {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #e3e3e3;
+    border-radius: 8px;
+    padding: 0.5em 1em;
+    gap: 0.7em;
+    opacity: 0.8;
+    
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    background: #fff;
+    border-radius: 50%;
+    border: 2px solid #e91e63;
+}
+
+.sitename {
+    font-size: 1.3rem;
+    color: #222;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.slogan {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.slogan-text {
+    font-size: 2.2vw;
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 8px #e91e63, 0 0 2px #fff;
+    animation: slogan-glow 2.5s ease-in-out infinite alternate;
+    transition: font-size 0.3s;
+}
+
+@keyframes slogan-glow {
+    0% { text-shadow: 0 2px 8px #e91e63, 0 0 2px #fff; }
+    100% { text-shadow: 0 4px 24px #e91e63, 0 0 8px #fff; }
+}

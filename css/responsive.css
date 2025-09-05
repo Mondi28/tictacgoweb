@@ -1,0 +1,34 @@
+
+@media (max-width: 900px) {
+	.slogan-text {
+		font-size: 3vw;
+	}
+	.sitename {
+		font-size: 1.1rem;
+	}
+	.logo {
+		width: 32px;
+		height: 32px;
+	}
+}
+
+@media (max-width: 600px) {
+	.navbar {
+		flex-direction: column;
+		height: auto;
+		padding: 1vw 2vw;
+		gap: 0.5em;
+	}
+	.logoandname {
+		width: 100%;
+		justify-content: center;
+		margin-bottom: 0.5em;
+	}
+	.slogan {
+		justify-content: center;
+	}
+	.slogan-text {
+		font-size: 5vw;
+		text-align: center;
+	}
+}
